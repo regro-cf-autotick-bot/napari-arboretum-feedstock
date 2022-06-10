@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools-scm
   run:
     - matplotlib
@@ -26,6 +26,7 @@ requirements:
     - numpy >=1.17.3
     - pandas
     - pooch >=1
+    - python >=3.8
     - vispy
 
 test:
