@@ -20,7 +20,7 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - matplotlib
+    - matplotlib-base
     - napari >=0.4.0
     - napari-matplotlib >=0.2.1
     - numpy >=1.17.3
