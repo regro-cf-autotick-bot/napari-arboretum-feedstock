@@ -47,4 +47,5 @@ about:
 extra:
   recipe-maintainers:
     - quantumjot
-    - conda-forge/napari
+    - goanpeca
+    - jaimergp
