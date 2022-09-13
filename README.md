@@ -143,7 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@quantumjot](https://github.com/quantumjot/)
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jaimergp](https://github.com/jaimergp/)
+* [@quantumjot](https://github.com/quantumjot/)
 
