@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-arboretum-{{ version }}.tar.gz
   sha256: 9b1837bb02727edd045b7a341af29bd466aef3ae01bbc81141c71117cd5b6078
-  patches:
-    - import.patch  # Use `qtpy` instead of `pyqt5`
 
 build:
   noarch: python
@@ -26,10 +24,10 @@ requirements:
     - napari >=0.4.0
     - napari-matplotlib >=0.2.1
     - numpy >=1.17.3
-    - qtpy
     - pandas
     - pooch >=1
     - python >=3.8
+    - qtpy
     - scikit-image
     - vispy
 
@@ -43,10 +41,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/quantumjot/arboretum
+  home: https://pypi.org/project/napari-arboretum
   summary: Track graph and lineage tree visualization with napari
   license: MIT
   license_file: LICENSE.md
+  dev_url: https://github.com/lowe-lab-ucl/arboretum
 
 extra:
   recipe-maintainers:
