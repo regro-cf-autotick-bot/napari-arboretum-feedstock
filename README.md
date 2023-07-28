@@ -1,13 +1,15 @@
-About napari-arboretum
-======================
-
-Home: https://github.com/quantumjot/arboretum
-
-Package license: MIT
+About napari-arboretum-feedstock
+================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-arboretum-feedstock/blob/main/LICENSE.txt)
 
+Home: https://pypi.org/project/napari-arboretum
+
+Package license: MIT
+
 Summary: Track graph and lineage tree visualization with napari
+
+Development: https://github.com/lowe-lab-ucl/arboretum
 
 Current build status
 ====================
