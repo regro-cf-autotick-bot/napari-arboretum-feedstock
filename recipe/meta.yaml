@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-arboretum-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-arboretum-{{ version }}.tar.gz
   sha256: 9b1837bb02727edd045b7a341af29bd466aef3ae01bbc81141c71117cd5b6078
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - matplotlib-base
@@ -26,7 +26,7 @@ requirements:
     - numpy >=1.17.3
     - pandas
     - pooch >=1
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy
     - scikit-image
     - vispy
@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-arboretum
